@@ -8,7 +8,7 @@ let timerInterval;
 
 
 async function loadQ(){
-    const res = await fetch("quizPanelele/questions.json");
+    const res = await fetch("questions.json");
     data = await res.json();
 
     const subjectSelect=document.getElementById("subject-select");
@@ -92,5 +92,6 @@ document.getElementById("false-btn").addEventListener("click",()=>checkAnswer(fa
 document.getElementById("next-btn").addEventListener("click",nextQ);
 
 loadQ();
+
 
 
