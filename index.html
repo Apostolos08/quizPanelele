@@ -1,0 +1,32 @@
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width,initial-scale=1.0">
+    <title>
+        Πανελλήνιες Quiz
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <div class="quiz-container">
+        <h1>Πανελλήνιες Quiz</h1>
+        <select id="subject-select">
+            <option value="">--Επίλεξε Μάθημα--</option>
+        </select>
+        <button id="start-btn">Ξεκίνα</button>
+        <div id="timer" class="hidden">Χρόνος: <span id="time">0:00</span> </div>
+        <div id="quiz-container" class="hidden">
+             <div id="question"></div>
+            <div class="buttons">
+                <button id="true-btn">Σωστό</button>
+                <button id="false-btn">Λάθος</button>
+            </div>
+        </div>
+    <p id="feedback"></p>
+    <button id="next-btn" class="hidden">Συνέχεια</button>
+    <p id="score" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
